@@ -21,7 +21,7 @@ try {
 
     $status = array_key_first($result['result'][$pipeline]);
 
-    $_POST['status'] = $status;
+    $_POST['kvnukov_status'] = $status;
 } catch (ApiException $e) {
     echo 'Exception when calling AccountApi->allStatuses: ', $e->getMessage(), PHP_EOL;
 }
@@ -34,7 +34,7 @@ try {
         default => 0
     }, 3);
 
-    $_POST['intr_group'] = implode(';', $emails);
+    $_POST['kvnukov_intr_group'] = implode(';', $emails);
 } catch (ApiException $e) {
     echo 'Exception when calling YadroApi->getUsers: ', $e->getMessage(), PHP_EOL;
 }
