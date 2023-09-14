@@ -1,13 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Задание 5 - Интроверт</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet">
 </head>
 <body>
-<form name="first">
-</form>
-<form name="second">
-</form>
+<div class="card mb-3">
+    <div class="card-body">
+        <form name="first">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="first-name" placeholder="Иван" required type="text">
+                <label for="first-name">Ваше имя</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="first-phone" placeholder="+71231231212" required type="tel">
+                <label for="first-phone">Телефон</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="first-email" placeholder="name@example.com" required type="email">
+                <label for="first-email">Почта</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="first-comment" placeholder="Комментарий"
+                          style="height: 100px"></textarea>
+                <label for="first-comment">Ваш комментарий</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <form name="second">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="second-name" placeholder="Иван" required type="text">
+                <label for="second-name">Ваше имя</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="second-phone" placeholder="+71231231212" required type="tel">
+                <label for="second-phone">Телефон</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="second-email" placeholder="name@example.com" required type="email">
+                <label for="second-email">Почта</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="second-comment" placeholder="Комментарий"
+                          style="height: 100px"></textarea>
+                <label for="second-comment">Ваш комментарий</label>
+            </div>
+            <button class="btn btn-secondary" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
